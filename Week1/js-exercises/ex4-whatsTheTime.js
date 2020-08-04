@@ -15,8 +15,8 @@ function displayCurrentTime() {
   // your code goes in here
   let date = new Date();
   let time = date.toLocaleTimeString();
-  document.getElementById('watch').innerHTML = time;
-  document.getElementById('watch').style.fontSize = '2em';
+  document.getElementById('watch').innerText = time;
+  document.getElementById('watch').style.fontSize = '2.5em';
 }
 
 setInterval(displayCurrentTime, 1000);
