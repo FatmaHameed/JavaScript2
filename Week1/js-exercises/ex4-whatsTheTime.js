@@ -13,6 +13,17 @@
 
 function displayCurrentTime() {
   // your code goes in here
+  let date = new Date();
+  let time = date.toLocaleTimeString();
+  document.getElementById('watch').innerHTML = time;
+  document.getElementById('watch').style.fontSize = '2em';
 }
 
 setInterval(displayCurrentTime, 1000);
+let heading = document.querySelector('h1');
+heading.style.color = 'blue';
+heading.style.fontSize = '4em';
+
+document.body.style.textAlign = 'center';
+document.body.style.backgroundColor = 'lightgrey';
+document.body.style.margin = '10%';
