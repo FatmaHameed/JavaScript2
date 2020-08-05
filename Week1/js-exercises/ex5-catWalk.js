@@ -11,3 +11,30 @@
  6. When the cat reaches the middle of the screen, replace the img with an image of a cat dancing(use this URL: https: //tenor.com/StFI.gif), keep it dancing for 5 seconds, and then replace the img with the original image and have it continue the walk.
  
 */
+
+//1. Create a variable to store a reference to the img.
+const catImg = document.querySelector('img');
+// 2. Change the style of the img to have a "left" of "0px", so that it starts at the left hand of the screens.
+catImg.style.left = '0px';
+let left = catImg.style.left;
+
+//3. Create a  function called catWalk() that moves the cat 10 pixels to the right of where it started, by changing the "left" style property.
+function catWalk() {
+  let post = 0;
+  let time = 1;
+  let bodyWidth = document.body.style.maxWidth;
+  bodyWidth = 950;
+  let move = setInterval(frame, time);
+
+  function frame() {
+    if (post === bodyWidth) {
+      clearInterval(move);
+    } else {
+      post++;
+      catImg.style.left = post + 'px';
+    }
+  }
+}
+
+setTimeout(catWalk, 50);
+setInterval(catWalk, 5000);
