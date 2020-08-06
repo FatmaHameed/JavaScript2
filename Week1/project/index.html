@@ -1,1 +1,45 @@
 <!-- Your code goes in here -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- creating a container that contains the whole page-->
+    <div id="container">
+      <!--create the quotes container-->
+      <div class="quotesContainer">
+        <h1 class="quote">
+          <span class="author"></span>
+        </h1>
+        <!--create the button container-->
+        <div class="buttons">
+          <button><i class="fa fa-facebook-official" aria-hidden="true"></i></button>
+          <button><i class="fa fa-twitter" aria-hidden="true"></i></button>
+          <button class="click-me">
+            New Quote
+          </button>
+        </div>
+      </div>
+      <!--create the small white box bellow the quotes container-->
+      <div class="box"></div>
+    </div>
+
+    <!--add the script linking tag-->
+    <script src="index.js"></script>
+  </body>
+</html>
