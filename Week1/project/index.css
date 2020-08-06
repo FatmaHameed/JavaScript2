@@ -1,0 +1,67 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+#container {
+  height: 100%;
+  background-color: orange;
+  color: orange;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 2rem;
+  width: 100%;
+  padding: 9% 13% 9% 13%;
+  margin: auto;
+}
+.quotesContainer {
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  padding: 10% 0 5%;
+
+  font-size: 1rem;
+}
+.author {
+  text-align: right;
+  float: right;
+  font-size: 70%;
+  margin-right: 18%;
+}
+.box {
+  background-color: white;
+  height: 3em;
+  width: 50%;
+  margin: 0.5% auto;
+}
+.buttons {
+  clear: both;
+  margin: 7% 0% 0% 0%;
+  padding: 1% 0%;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons1 {
+  display: flex;
+  justify-content: space-between;
+  justify-items: left;
+}
+.buttons .click-me {
+  padding: 1% 1%;
+  font-size: 1em;
+  width: 120%;
+  height: 100%;
+}
+.buttons button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+  border: 1px solid orange;
+  margin: 3% 1% 0% 1%;
+}
+
+i {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
