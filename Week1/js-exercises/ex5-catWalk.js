@@ -16,13 +16,14 @@ dancingCat.style.display = 'none';
 function catWalk() {
   let post = 0;
 
-  const move1 = setInterval(firstMove, 10);
-  const move2 = setInterval(moveAgain, 24);
+  const move1 = setInterval(firstMove, 20);
+  const move2 = setInterval(moveAgain, 20);
   function firstMove() {
-    if (post === bodyWidth / 2) {
+    if (post === (bodyWidth - origCat.width) / 2) {
       clearInterval(move1);
-      dancingCat.style.display = 'block';
-      origCat.style.display = 'none';
+      // dancingCat.style.display = 'block';
+      // origCat.style.display = 'none';
+      showLoad();
     } else {
       post++;
       origCat.style.left = post + 'px';
@@ -30,7 +31,7 @@ function catWalk() {
     }
   }
   function moveAgain() {
-    if (post === bodyWidth / 2) {
+    if (post === (bodyWidth - origCat.width) / 2) {
       post++;
       origCat.style.left = post + 'px';
       showCode();
