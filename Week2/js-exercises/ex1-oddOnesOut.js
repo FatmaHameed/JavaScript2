@@ -1,3 +1,5 @@
+'use strict';
+
 /**
 
  ** Exercise 1: The odd ones out **
