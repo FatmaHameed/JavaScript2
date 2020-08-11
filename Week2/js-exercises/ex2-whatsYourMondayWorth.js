@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  
  ** Exercise 2: What 's your Monday worth? **
@@ -11,12 +13,16 @@
 
  */
 
-
 function dayWorth(tasks, hourlyRate) {
   // put your code in here, the function does returns a euro formatted string
+  const tasksPerHour = tasks
+    .map(task => task.duration * hourlyRate)
+    .reduce((acc, currentValue) => acc + currentValue, 0);
+  return tasksPerHour.toLocaleString('ja-JP', { style: 'currency', currency: 'EUR' });
 }
 
-const mondayTasks = [{
+const mondayTasks = [
+  {
     name: 'Daily standup',
     duration: 30, // specified in minutes
   },
@@ -34,5 +40,5 @@ const mondayTasks = [{
   },
 ];
 
-console.log(dayWorth(mondayTasks, 25))
-console.log(dayWorth(mondayTasks, 13.37))
+console.log(dayWorth(mondayTasks, 25));
+console.log(dayWorth(mondayTasks, 13.37));
