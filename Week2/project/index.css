@@ -64,3 +64,12 @@ i {
   font-size: 3em;
   font-weight: bold;
 }
+
+@media (max-width: 450px) {
+  #session-control {
+    width: 60%;
+  }
+  #header {
+    font-size: 1.5em;
+  }
+}
