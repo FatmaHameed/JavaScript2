@@ -43,7 +43,7 @@ play.addEventListener('click', function start() {
 
 // Create an event listener and a function to stop count down every 1 seconds and reset the timer to default (25)
 stop.addEventListener('click', function reSet() {
-  minutes.innerText = 25;
+  minutes.innerText = timeControlNo;
   seconds.innerText = '00';
   timeControl.innerText = 25;
   pauseTimer();
