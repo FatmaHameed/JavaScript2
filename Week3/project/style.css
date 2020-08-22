@@ -1,0 +1,86 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+#app {
+  height: 100vh;
+  width: 100vw;
+  background-color: grey;
+  align-items: center;
+  padding: 2% 2%;
+  border-top: 4px solid rgb(33, 122, 206);
+}
+#box {
+  width: 30vw;
+  background-color: white;
+  height: 90vh;
+  margin: auto auto;
+  padding: 5% auto;
+  border-radius: 5px;
+}
+#box div {
+  padding: 3%;
+}
+#box #heading1 {
+  padding: 3% 10%;
+  border-bottom: 1.5px solid grey;
+}
+label {
+  padding: 4%;
+}
+input {
+  height: 5vh;
+  margin: 3%;
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding: 4%;
+}
+input:focus {
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.801);
+}
+select {
+  height: 5vh;
+  margin: 3%;
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding: 0 4%;
+}
+select:focus {
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.801);
+}
+
+option:nth-child(1) {
+  color: grey;
+}
+button {
+  margin: auto 35%;
+  border: 1px solid red;
+  width: 30%;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 3% 5%;
+}
+
+#amount {
+  text-align: center;
+  line-height: 1.8rem;
+  margin: 5% 0 5%;
+  color: rgb(26, 82, 185);
+  font-size: 1.5rem;
+  display: none;
+}
+@media (max-width: 1024px) {
+  #box {
+    width: 80vw;
+  }
+  button {
+    width: 40%;
+  }
+}
