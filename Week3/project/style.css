@@ -30,6 +30,10 @@
 label {
   padding: 4%;
 }
+#amountOfBill {
+  margin: 3% 5%;
+  width: 90%;
+}
 input {
   height: 5vh;
   margin: 3%;
@@ -56,19 +60,20 @@ select:focus {
 option:nth-child(1) {
   color: grey;
 }
-button {
-  margin: auto 35%;
+#calculate {
+  margin: auto 30%;
   border: 1px solid red;
-  width: 30%;
+  width: 40%;
   border-radius: 5px;
   background-color: red;
   color: white;
   font-weight: bold;
   font-size: 1rem;
   padding: 3% 5%;
+  height: 8vh;
 }
 
-#amount {
+#amountE {
   text-align: center;
   line-height: 1.8rem;
   margin: 5% 0 5%;
@@ -80,7 +85,8 @@ button {
   #box {
     width: 80vw;
   }
-  button {
-    width: 40%;
+  #calculate {
+    width: 60%;
+    margin: auto 20%;
   }
 }
