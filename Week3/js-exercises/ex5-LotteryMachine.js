@@ -27,12 +27,39 @@ Don't you just love the thrill of the lottery? What if I told you we can make ou
 */
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-  const numbers = [];
-  // make array
-  // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
-}
+  let numbers = [];
+  // make array => re-initiate the variable numbers to new array
+  numbers = new Array();
 
-threeFive(10, 15, sayThree, sayFive);
+  // 1- iterate through the array using startIndex and stopIndex to generate array:
+  for (let i = 0; i < stopIndex; i++) {
+    startIndex++;
+    numbers[i] = startIndex;
+    if (numbers[i] === stopIndex) {
+      // break the loop when numbers element reach to the stopIndex
+      break;
+    }
+  }
+  // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 3 === 0 && numbers[i] % 5 !== 0) {
+      threeCallback(numbers[i]);
+    } else if (numbers[i] % 3 !== 0 && numbers[i] % 5 === 0) {
+      fiveCallback(numbers[i]);
+    } else if (numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
+      threeCallback(numbers[i]);
+      fiveCallback(numbers[i]);
+    }
+  }
+}
+const sayThree = function(number) {
+  console.log(`${number} divisible by three`);
+};
+const sayFive = function(number) {
+  console.log(`${number} divisible by five`);
+};
+console.log(threeFive(10, 15, sayThree, sayFive));
 
 // Should create an array [10,11,12,13,14,15]
 // and call sayFive, sayThree, sayThree, sayFive
