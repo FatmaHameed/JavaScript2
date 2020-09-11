@@ -32,13 +32,8 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   numbers = new Array();
 
   // 1- iterate through the array using startIndex and stopIndex to generate array:
-  for (let i = 0; i < stopIndex; i++) {
-    startIndex++;
-    numbers[i] = startIndex;
-    if (numbers[i] === stopIndex) {
-      // break the loop when numbers element reach to the stopIndex
-      break;
-    }
+  for (let i = startIndex; i <= stopIndex; i++) {
+    numbers.push(i);
   }
   // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
 
