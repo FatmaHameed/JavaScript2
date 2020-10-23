@@ -38,7 +38,8 @@ function calculateTipAmount() {
 }
 
 // 3- add event listeners for the calculate
-function activateSelectEl() {
+function activateSelectEl(e) {
+  e.preventDefault();
 calculate.addEventListener('click', calculateTipAmount);  
 }
 window.addEventListener('load', activateSelectEl);
